@@ -1,0 +1,46 @@
+/***
+*
+*  IMPORT ALL OF THE STYLES HERE
+* 
+*
+***/
+
+/**======================START=====================**/
+
+/** IMPORTANT STYLES **/
+@import "compass/css3";
+@import "compass/reset";
+
+/* Import Compass clearfix */
+@import "compass/utilities/general/clearfix";
+
+@import "_variables";
+@import "_grids";
+@import "_general";
+
+/**======================END=====================**/
+@include border-box-sizing;
+
+/********** TYPOGRAPHY **********/
+
+    @import "typography/_default";
+
+/**********   HEADER   **********/
+
+    @import "header/_default";
+
+/**********   MODULES  **********/
+
+    @import "modules/home/_default";
+
+/**********   FOOTER   **********/
+
+    @import "footer/_default";
+
+/**********   WIDGET   **********/
+
+    // @import "";
+
+
+
+

@@ -1,0 +1,108 @@
+/***
+*
+* GRIDS BASE SUSY
+* MEDIA QUERY 
+*
+***/
+
+@import "susy";
+
+$susy: (
+  flow                : ltr,
+//   math                : fluid,
+  output              : float,
+//   gutter-position     : after,
+  container           : 1200px,
+  container-position  : center,
+  columns             : 12,
+  gutters             : 1/4,
+  column-width        : false,
+  global-box-sizing   : border-box,
+//   last-flow           : to,
+  debug: (
+    image     : show,
+    color     : rgba(#66f, .25),
+    output    : background,
+    toggle    : top right,
+  ),
+  // use-custom: (
+  //   background-image    : true,
+  //   background-options  : false,
+  //   box-sizing          : true,
+  //   clearfix            : false,
+  //   rem                 : true,
+  // )
+);
+
+
+/*========================================================================================*\
+*----------------------------            MEDIA QUERY            ----------------------------        
+\*========================================================================================*/
+
+
+@mixin led4k{
+	@media screen and (min-width : $led4k){
+		@content;
+	}
+}
+
+@mixin led{
+	@media screen and (min-width : $alpha){
+		@content;
+	}
+}
+
+@mixin lcd{
+	@media screen and (min-width : $pre-alpha){
+		@content;
+	}
+}
+
+@mixin laptop{
+	@media screen and (max-width : $beta){
+		@content;
+	}
+}
+
+@mixin mini_laptop{
+	@media screen and (max-width : $pre-beta){
+		@content;
+	}
+}
+
+@mixin tablet{
+	@media screen and (max-width : $gamma){
+		@content;
+	}
+}
+
+@mixin retinaMobile{
+	@media screen and ( min-width : $lota ) and ( max-width : $pre-zeta ){
+		@content;
+	}
+}
+
+@mixin mobile{
+	@media screen and (max-width : $eta  ){
+		@content;
+	}
+}
+
+@mixin mini_mobile{
+	@media screen and (max-width : $kappa  ){
+		@content;
+	}
+}
+
+//custom
+@mixin responsiveMax($maxwidth){
+	@media screen and (max-width : $maxwidth){
+		@content;
+	}
+}
+
+@mixin responsiveMin($minwidth){
+	@media screen and (min-width : $minwidth){
+		@content;
+	}
+}

@@ -1,0 +1,291 @@
+/***
+*
+*  IMPORT ALL OF THE STYLES HERE
+* 
+*
+***/
+/**======================START=====================**/
+/** IMPORTANT STYLES **/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Import Compass clearfix */
+/***
+*
+* ALL OF THE VARIABLES TYPE 
+*
+***/
+/*========================================================================================*\
+*----------------------------               COLORE              ----------------------------        
+\*========================================================================================*/
+/*========================================================================================*\
+*----------------------------               GRIDS              ----------------------------        
+\*========================================================================================*/
+/***
+*
+* GRIDS BASE SUSY
+* MEDIA QUERY 
+*
+***/
+/*========================================================================================*\
+*----------------------------            MEDIA QUERY            ----------------------------        
+\*========================================================================================*/
+/***
+*
+* PUBLIC STYLES 
+*
+***/
+/**======================END=====================**/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/********** TYPOGRAPHY **********/
+/***
+*
+*  FONT DIFINITION AND SOME OF THE CLASS FOR SIZE OF THE TEXT
+*	
+***/
+@font-face {
+  font-family: "Open sanse";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/eot/opensanse_Bold.eot");
+  src: url("../fonts/eot/opensanse_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/opensanse_Bold.woff2") format("woff2"), url("../fonts/woff/opensanse_Bold.woff") format("woff"), url("../fonts/ttf/opensanse_Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open sanse";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/eot/opensanse_Medium.eot");
+  src: url("../fonts/eot/opensanse_Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/opensanse_Medium.woff2") format("woff2"), url("../fonts/woff/opensanse_Medium.woff") format("woff"), url("../fonts/ttf/opensanse_Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open sanse";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/eot/opensanse_Light.eot");
+  src: url("../fonts/eot/opensanse_Light.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/opensanse_Light.woff2") format("woff2"), url("../fonts/woff/opensanse_Light.woff") format("woff"), url("../fonts/ttf/opensanse_Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open sanse";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/eot/opensanse_UltraLight.eot");
+  src: url("../fonts/eot/opensanse_UltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/opensanse_UltraLight.woff2") format("woff2"), url("../fonts/woff/opensanse_UltraLight.woff") format("woff"), url("../fonts/ttf/opensanse_UltraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open sanse";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/eot/opensanse.eot");
+  src: url("../fonts/eot/opensanse.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/opensanse.woff2") format("woff2"), url("../fonts/woff/opensanse.woff") format("woff"), url("../fonts/ttf/opensanse.ttf") format("truetype");
+}
+body {
+  font-size: 100%;
+  font-family: "Open sanse" !important;
+  font-weight: 300;
+  direction: rtl;
+  margin: 0;
+}
+
+* {
+  font-family: "Open sanse";
+}
+
+h1, h2, h3, h4, h5, h6, input, textarea, button, select, option, label, p, span {
+  font-family: "Open sanse" !important;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+.text-small {
+  font-size: 0.8em;
+}
+
+.text-xsmall {
+  font-size: 0.6em;
+}
+
+.text-large {
+  font-size: 1.2em;
+}
+
+.text-xlarge {
+  font-size: 1.4em;
+}
+
+.text-ultralight {
+  font-weight: 200;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+.text-medium {
+  font-weight: 500;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-regular {
+  font-weight: normal;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+blockquote {
+  font-weight: 500;
+  padding: 10px;
+}
+
+/**********   HEADER   **********/
+/***
+*
+* DEFAULT HEADER HOME PAGE
+*
+***/
+header {
+  padding: 2em;
+  background-color: #FF4CA5;
+}
+
+/**********   MODULES  **********/
+/***
+*
+* DEFAULT HOME PAGE STYLE
+*
+***/
+main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNiM2IzZmYiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(80%, rgba(179, 179, 255, 0.25)), color-stop(80%, rgba(0, 0, 0, 0)));
+  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
+  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
+  background-size: 8.47458%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
+  background-color: #FFFFFF;
+}
+main:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+header, article, aside {
+  margin-bottom: 1.69492%;
+}
+
+article {
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
+  padding: 2em;
+  background-color: #ff007f;
+}
+
+aside {
+  width: 32.20339%;
+  float: right;
+  margin-right: 0;
+  padding: 2em;
+  background-color: #CC0066;
+}
+
+/**********   FOOTER   **********/
+/***
+*
+* DEFAULT FOOTER HOME PAGE
+*
+***/
+footer {
+  clear: both;
+  padding: 2em;
+  background-color: #7F2653;
+}
+
+/**********   WIDGET   **********/

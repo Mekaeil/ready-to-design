@@ -1,0 +1,137 @@
+/***
+*
+*  FONT DIFINITION AND SOME OF THE CLASS FOR SIZE OF THE TEXT
+*	
+***/
+@font-face {
+	font-family : "Open sanse";
+	font-style  : normal;
+	font-weight : bold;
+	src: url('../fonts/eot/opensanse_Bold.eot');
+	src: url('../fonts/eot/opensanse_Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/opensanse_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/opensanse_Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/opensanse_Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family : "Open sanse";
+	font-style  : normal;
+	font-weight : 500;
+	src: url('../fonts/eot/opensanse_Medium.eot');
+	src: url('../fonts/eot/opensanse_Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/opensanse_Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/opensanse_Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/opensanse_Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family : "Open sanse";
+	font-style  : normal;
+	font-weight : 300;
+	src: url('../fonts/eot/opensanse_Light.eot');
+	src: url('../fonts/eot/opensanse_Light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/opensanse_Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/opensanse_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/opensanse_Light.ttf') format('truetype');
+}
+@font-face {
+	font-family : "Open sanse";
+	font-style  : normal;
+	font-weight : 200;
+	src: url('../fonts/eot/opensanse_UltraLight.eot');
+	src: url('../fonts/eot/opensanse_UltraLight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/opensanse_UltraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/opensanse_UltraLight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/opensanse_UltraLight.ttf') format('truetype');
+}
+@font-face {
+	font-family : "Open sanse";
+	font-style  : normal;
+	font-weight : normal;
+	src: url('../fonts/eot/opensanse.eot');
+	src: url('../fonts/eot/opensanse.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/opensanse.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/opensanse.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/opensanse.ttf') format('truetype');
+}
+
+body {
+	font-size  	: 100%;
+	font-family : "Open sanse" !important;
+	font-weight : 300;
+	direction 	: rtl;
+	margin 		: 0;
+}
+
+* {
+	font-family: "Open sanse";
+}
+
+h1, h2, h3, h4, h5, h6,input, textarea , button , select , option , label , p , span{
+	font-family: "Open sanse" !important;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+.ltr {
+	direction: ltr;
+}
+
+.text-small {
+	font-size 	: 0.8em;
+}
+
+.text-xsmall {
+	font-size 	: 0.6em;
+}
+
+.text-large {
+	font-size 	: 1.2em;
+}
+
+.text-xlarge {
+	font-size 	: 1.4em;
+}
+
+.text-ultralight {
+	font-weight : 200;
+}
+
+.text-light {
+	font-weight : 300;
+}
+
+.text-medium {
+	font-weight : 500;
+}
+
+.text-bold {
+	font-weight : bold;
+}
+
+.text-right {
+	text-align 	: right;
+}
+
+.text-left {
+	text-align 	: left;
+}
+
+.text-center {
+	text-align 	: center;
+}
+
+.text-regular {
+	font-weight : normal;
+}
+
+.text-underline {
+	text-decoration : underline;
+}
+
+blockquote {
+	font-weight : 500;
+	padding 	: 10px;
+}
+
