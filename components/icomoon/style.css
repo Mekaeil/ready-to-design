@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?y7oe4d');
-  src:  url('fonts/icomoon.eot?y7oe4d#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?y7oe4d') format('truetype'),
-    url('fonts/icomoon.woff?y7oe4d') format('woff'),
-    url('fonts/icomoon.svg?y7oe4d#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?c6bb0c');
+  src:  url('fonts/icomoon.eot?c6bb0c#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?c6bb0c') format('truetype'),
+    url('fonts/icomoon.woff?c6bb0c') format('woff'),
+    url('fonts/icomoon.svg?c6bb0c#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -206,4 +206,34 @@
 }
 .icon-exit:before {
   content: "\ea14";
+}
+.icon-clipboard2:before {
+  content: "\e9b9";
+}
+.icon-list:before {
+  content: "\e9ba";
+}
+.icon-list2:before {
+  content: "\e9bb";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-menu2:before {
+  content: "\e9be";
+}
+.icon-menu3:before {
+  content: "\e9bf";
+}
+.icon-menu4:before {
+  content: "\e9c0";
+}
+.icon-menu5:before {
+  content: "\e5d2";
+}
+.icon-more_horiz:before {
+  content: "\e5d3";
+}
+.icon-more_vert:before {
+  content: "\e5d4";
 }

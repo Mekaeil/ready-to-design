@@ -1,45 +1,59 @@
-/***
-*
-*  IMPORT ALL OF THE STYLES HERE
-* 
-*
-***/
+/*========================================================================================
+*********   
+*******     IMPORT ALL OF THE STYLES HERE
+*****       
+***         
+*/
 
-/**======================START=====================**/
+    /*--------------------------------
+    ***  SET DIRECTION BEFORE ANYTHING
+    **   DEFAULT VALUE : LTR     
+    */
 
-/** IMPORTANT STYLES **/
-@import "compass/css3";
-@import "compass/reset";
+        @import "functions/_direction";
 
-/* Import Compass clearfix */
-@import "compass/utilities/general/clearfix";
+    /*--------------------------------
+    ***  IMPORT GENERAL AND IMPORTANT
+    **   VARIABLES , GRIDS , PLACEHOLDERS 
+    */
 
-@import "_variables";
-@import "_grids";
-@import "_general";
+        @import "_variables";
+        @import "_grids";
+        @import "_placeholders";
+        @import "_general";
 
-/**======================END=====================**/
-@include border-box-sizing;
+    /*--------------------------------
+    ***  
+    **   TYPOGRAPHY
+    */
+        @import "typography/_default";
+        @import "typography/_icomoon";
 
-/********** TYPOGRAPHY **********/
+    /*--------------------------------
+    ***  
+    **   HEADER
+    */    
 
-    @import "typography/_default";
+        @import "header/_default";
 
-/**********   HEADER   **********/
+    /*--------------------------------
+    ***  
+    **   MODULES
+    */       
 
-    @import "header/_default";
+        @import "modules/home/_default"; 
 
-/**********   MODULES  **********/
+    /*--------------------------------
+    ***  
+    **   FOOTER
+    */       
 
-    @import "modules/home/_default";
+        @import "footer/_default";
 
-/**********   FOOTER   **********/
-
-    @import "footer/_default";
-
-/**********   WIDGET   **********/
-
-    // @import "";
+    /*--------------------------------
+    ***  
+    **   WIDGET
+    */       
 
 
 

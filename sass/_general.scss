@@ -1,5 +1,94 @@
-/***
-*
-* PUBLIC STYLES 
-*
-***/
+/*========================================================================================
+*********   PUBLIC STYLES 
+*******      
+*****       
+***         
+*/
+
+    html{
+        direction 		: $dir;
+        overflow-x 		: hidden;
+    }
+
+    body{
+        overflow-x 		: hidden;
+    }
+
+    * , *::after , *::before {
+        outline 		: none;
+    }
+
+    .wrapper-flex{
+        @extend %wrapper-flex;
+    }
+
+    .ceneter-block{
+        margin : 0 auto;
+    }
+    
+
+    .clearfix{
+        clear : both;
+    }
+    
+    a{
+        text-decoration : none;
+        color           : $colorLink;
+        transition      : $transitionLink; 
+
+        &:hover{
+            background  : $hoverBgLink;
+            color       : $hoverColorLink;
+        }
+    }
+
+    .float-left{
+        float : $left
+    }
+
+    .float-right {
+        float : $right;
+    }
+
+    .text-right{
+        text-align  : $right;
+    }
+
+    .rext-left{
+        text-align  : $left;
+    }
+
+    .text-center {
+        text-align 	: center;
+    }    
+
+    ul{
+        margin 			: 0;
+        padding 		: 0;
+        list-style-type : none;
+    }
+
+    select{
+    border 			: 1px solid rgba(0, 0, 0, 0.1);
+    background 		: transparent;
+    font-size 		: 0.75em;
+    padding 		: 0px 10px;
+    border-radius   : 3px;
+    outline 		: none;
+    margin 			: 0 5px; 
+    transition 		: all 0.3s; 
+
+        &:focus{
+            transition 	: all 0.3s;
+            border 		: 1px solid rgba(0, 0, 0, 0.5); 
+        }
+        
+    }//select
+
+    .displayOnSmallDevice{
+        display : none;
+
+        @include tablet{
+            display : block;
+        }
+    }

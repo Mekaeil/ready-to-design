@@ -1,11 +1,97 @@
-/***
-*
-*  IMPORT ALL OF THE STYLES HERE
-* 
-*
-***/
-/**======================START=====================**/
-/** IMPORTANT STYLES **/
+/*========================================================================================
+*********   
+*******     IMPORT ALL OF THE STYLES HERE
+*****       
+***         
+*/
+/*--------------------------------
+***  SET DIRECTION BEFORE ANYTHING
+**   DEFAULT VALUE : LTR     
+*/
+/*========================================================================================
+*********   SET DIRECTION ALL PROJECT LIKE : DIRECTION ,
+*******     MARGIN / PADDING / TRASLATE , 
+*****       LEFT AND RIGHT POSITION ,
+***         BORDER RADIUS / ARROWS.
+*/
+/*--------------------------------
+***     FIRST , SET DIRECTION
+**	    SET DEFAULT VALUE
+*/
+/*--------------------------------
+***     RE-ORDER MARGIN / PADDING
+**	    SET POSITION
+*/
+/*--------------------------------
+***     RE-ORDER BORDER RADIUS
+**	    SET RADIUS POSITION
+*/
+/*--------------------------------
+***     SET THE VALUE INVERSE
+**	    LIKE TRANSLATE TAG
+*/
+/*--------------------------------
+***  IMPORT GENERAL AND IMPORTANT
+**   VARIABLES , GRIDS , PLACEHOLDERS 
+*/
+/*========================================================================================
+*********   ALL OF THE VARIABLES TYPE 
+*******     COLORS 
+*****       GRIDS
+***         
+*/
+/*========================================================================================*\
+*----------------------------               COLORE              ----------------------------        
+\*========================================================================================*/
+/*--------------------------------
+*** FLAT UI COLORS 
+**  flatuicolors.com/palette/defo
+*/
+/*--------------------------------
+*** GENERAL ATTRIBUTES 
+**
+*/
+/*--------------------------------
+*** HEADER 
+**
+*/
+/*--------------------------------
+*** COLOR LINK 
+**
+*/
+/*--------------------------------
+*** CUSTOM COLOR
+**
+*/
+/*========================================================================================*\
+*----------------------------               GRIDS              ----------------------------        
+\*========================================================================================*/
+/*--------------------------------
+*** SUSY COLUMN 
+**  SET DIRECTION PROJECT
+*/
+/*--------------------------------
+*** BREAKPOINTS
+**
+*/
+/*========================================================================================*\
+*----------------------------             DIRECTIONS            ----------------------------        
+\*========================================================================================*/
+/*--------------------------------
+***     AFTER SET DIRECTION 
+**	    SET RIGHT AND LEFT 
+*/
+/*========================================================================================
+*********   GRIDS BASE SUSY
+*******     MEDIA QUERY 
+*****       
+***         
+*/
+/*--------------------------------
+***  GENERAL DIFINITIONS
+**	 COMPASS , SUSY , CSS3 , CLEARFIX
+*/
+@import url("https://fonts.googleapis.com/css?family=Muli");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -62,94 +148,195 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* Import Compass clearfix */
-/***
-*
-* ALL OF THE VARIABLES TYPE 
-*
-***/
-/*========================================================================================*\
-*----------------------------               COLORE              ----------------------------        
-\*========================================================================================*/
-/*========================================================================================*\
-*----------------------------               GRIDS              ----------------------------        
-\*========================================================================================*/
-/***
-*
-* GRIDS BASE SUSY
-* MEDIA QUERY 
-*
-***/
-/*========================================================================================*\
-*----------------------------            MEDIA QUERY            ----------------------------        
-\*========================================================================================*/
-/***
-*
-* PUBLIC STYLES 
-*
-***/
-/**======================END=====================**/
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/********** TYPOGRAPHY **********/
-/***
-*
-*  FONT DIFINITION AND SOME OF THE CLASS FOR SIZE OF THE TEXT
-*	
-***/
-@font-face {
-  font-family: "Open sanse";
-  font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/eot/opensanse_Bold.eot");
-  src: url("../fonts/eot/opensanse_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/opensanse_Bold.woff2") format("woff2"), url("../fonts/woff/opensanse_Bold.woff") format("woff"), url("../fonts/ttf/opensanse_Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open sanse";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/eot/opensanse_Medium.eot");
-  src: url("../fonts/eot/opensanse_Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/opensanse_Medium.woff2") format("woff2"), url("../fonts/woff/opensanse_Medium.woff") format("woff"), url("../fonts/ttf/opensanse_Medium.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open sanse";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/eot/opensanse_Light.eot");
-  src: url("../fonts/eot/opensanse_Light.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/opensanse_Light.woff2") format("woff2"), url("../fonts/woff/opensanse_Light.woff") format("woff"), url("../fonts/ttf/opensanse_Light.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open sanse";
-  font-style: normal;
-  font-weight: 200;
-  src: url("../fonts/eot/opensanse_UltraLight.eot");
-  src: url("../fonts/eot/opensanse_UltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/opensanse_UltraLight.woff2") format("woff2"), url("../fonts/woff/opensanse_UltraLight.woff") format("woff"), url("../fonts/ttf/opensanse_UltraLight.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open sanse";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/eot/opensanse.eot");
-  src: url("../fonts/eot/opensanse.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/opensanse.woff2") format("woff2"), url("../fonts/woff/opensanse.woff") format("woff"), url("../fonts/ttf/opensanse.ttf") format("truetype");
-}
-body {
-  font-size: 100%;
-  font-family: "Open sanse" !important;
-  font-weight: 300;
-  direction: rtl;
-  margin: 0;
+.container {
+  width: 90%;
 }
 
-* {
-  font-family: "Open sanse";
+/*========================================================================================*\
+*----------------------------          MEDIA QUERY              ----------------------------        
+\*========================================================================================*/
+/*--------------------------------
+*** 4K AND HIGH RESOULOTIONS 
+**	MIN-WIDTH : 2560px OR 160em
+*/
+/*--------------------------------
+*** LAPTOP OR DESKTOP 
+**	MIN-WIDTH : 1400px OR 87.5em
+*/
+/*--------------------------------
+*** FOR SOM OF THE DEVICES
+**	MIN-WIDTH : 1201px OR 75.0625em
+*/
+/*--------------------------------
+*** FOR ANY DEVICE MAX SIZE UNTIL
+**	MAX-WIDTH : 1200px OR 75em
+*/
+/*--------------------------------
+*** FOR ANY DEVICE MAX SIZE UNTIL
+**	MAX-WIDTH : 1024px OR 64em
+*/
+/*--------------------------------
+*** FOR ANY DEVICE MAX SIZE UNTIL
+**	MAX-WIDTH : 992px OR 62em
+*/
+/*--------------------------------
+*** FOR RETINA MOBILE AND LANSCAPE
+**	MIN : 500px / 31.25em | MAX : 767PX / 47.9375em
+*/
+/*--------------------------------
+*** FOR MOBILE
+**	MAX : 640PX / 40em
+*/
+/*--------------------------------
+*** FOR MINI MOBILE
+**	MAX : 400PX / 25em
+*/
+/*--------------------------------
+*** FOR CUSTOM MEDIA QUERY
+**	MAX : CUSTOM
+*/
+/*--------------------------------
+*** FOR CUSTOM MEDIA QUERY
+**	MIN : CUSTOM
+*/
+/*========================================================================================
+*********    
+*******      DIFINITION PLACEHOLDERS
+*****        
+***          
+*/
+/*--------------------------------
+***     
+**	 WRAPPER CLEARFIX
+*/
+.wrapper-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*========================================================================================
+*********   PUBLIC STYLES 
+*******      
+*****       
+***         
+*/
+html {
+  direction: ltr;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+*, *::after, *::before {
+  outline: none;
+}
+
+.ceneter-block {
+  margin: 0 auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.6s;
+}
+a:hover {
+  background: whitesmoke;
+  color: #3498db;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.rext-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+select {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: transparent;
+  font-size: 0.75em;
+  padding: 0px 10px;
+  border-radius: 3px;
+  outline: none;
+  margin: 0 5px;
+  transition: all 0.3s;
+}
+select:focus {
+  transition: all 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.displayOnSmallDevice {
+  display: none;
+}
+@media screen and (max-width: 62em) {
+  .displayOnSmallDevice {
+    display: block;
+  }
+}
+
+/*--------------------------------
+***  
+**   TYPOGRAPHY
+*/
+/*========================================================================================
+*********   
+*******     FONT DIFINITION AND SOME OF THE CLASS FOR SIZE OF THE TEXT
+*****       
+***         
+*/
+/*--------------------------------
+***  
+**	 SET FONT FAMILY
+*/
+/*========================================================================================
+*********   
+*******     IMPORT THIS FONT FROM FONTS.GOOGLE.COM 
+*****       
+***         
+*/
+/*--------------------------------
+***  
+**	 GENERAL STYLE FONT TYPOGRAPHY
+*/
+body, html, * {
+  font-family: "Muli", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, input, textarea, button, select, option, label, p, span {
-  font-family: "Open sanse" !important;
+  font-family: "Muli", sans-serif;
 }
 
 h1 {
@@ -192,18 +379,6 @@ h1 {
   font-weight: bold;
 }
 
-.text-right {
-  text-align: right;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
 .text-regular {
   font-weight: normal;
 }
@@ -217,38 +392,508 @@ blockquote {
   padding: 10px;
 }
 
-/**********   HEADER   **********/
-/***
-*
-* DEFAULT HEADER HOME PAGE
-*
-***/
-header {
-  padding: 2em;
-  background-color: #FF4CA5;
+/*========================================================================================
+*********   
+*******     EXPORT THIS FONT ICONS FROM ICOMOON.IO AND SELECTED THESE ICONS BASE PERSONAL INTRESTING 
+*****       YOU CAN UPDATE THIS ICONS WITH IMPORT JSON FILE IN COMPONENT FOLDER TO MAIN SITE.
+***         
+*/
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icons/icomoon.eot?y7oe4d");
+  src: url("../fonts/icons/icomoon.eot?y7oe4d#iefix") format("embedded-opentype"), url("../fonts/icons/icomoon.ttf?y7oe4d") format("truetype"), url("../fonts/icons/icomoon.woff?y7oe4d") format("woff"), url("../fonts/icons/icomoon.svg?y7oe4d#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/**********   MODULES  **********/
-/***
-*
-* DEFAULT HOME PAGE STYLE
-*
-***/
+.icon-home:before {
+  content: "\e900";
+}
+
+.icon-home2:before {
+  content: "\e901";
+}
+
+.icon-office:before {
+  content: "\e903";
+}
+
+.icon-newspaper:before {
+  content: "\e904";
+}
+
+.icon-play:before {
+  content: "\e912";
+}
+
+.icon-film:before {
+  content: "\e913";
+}
+
+.icon-book:before {
+  content: "\e91f";
+}
+
+.icon-books:before {
+  content: "\e920";
+}
+
+.icon-folder-open:before {
+  content: "\e930";
+}
+
+.icon-ticket:before {
+  content: "\e939";
+}
+
+.icon-coin-dollar:before {
+  content: "\e93b";
+}
+
+.icon-credit-card:before {
+  content: "\e93f";
+}
+
+.icon-pushpin:before {
+  content: "\e946";
+}
+
+.icon-location:before {
+  content: "\e947";
+}
+
+.icon-history:before {
+  content: "\e94d";
+}
+
+.icon-clock:before {
+  content: "\e94e";
+}
+
+.icon-clock2:before {
+  content: "\e94f";
+}
+
+.icon-alarm:before {
+  content: "\e950";
+}
+
+.icon-bell:before {
+  content: "\e951";
+}
+
+.icon-stopwatch:before {
+  content: "\e952";
+}
+
+.icon-calendar:before {
+  content: "\e953";
+}
+
+.icon-search:before {
+  content: "\e986";
+}
+
+.icon-enlarge:before {
+  content: "\e989";
+}
+
+.icon-shrink:before {
+  content: "\e98a";
+}
+
+.icon-stats-bars:before {
+  content: "\e99c";
+}
+
+.icon-gift:before {
+  content: "\e99f";
+}
+
+.icon-mug:before {
+  content: "\e9a2";
+}
+
+.icon-rocket:before {
+  content: "\e9a5";
+}
+
+.icon-bin:before {
+  content: "\e9ac";
+}
+
+.icon-bin2:before {
+  content: "\e9ad";
+}
+
+.icon-briefcase:before {
+  content: "\e9ae";
+}
+
+.icon-airplane:before {
+  content: "\e9af";
+}
+
+.icon-truck:before {
+  content: "\e9b0";
+}
+
+.icon-road:before {
+  content: "\e9b1";
+}
+
+.icon-switch:before {
+  content: "\e9b6";
+}
+
+.icon-clipboard:before {
+  content: "\e9b8";
+}
+
+.icon-cloud-download:before {
+  content: "\e9c2";
+}
+
+.icon-cloud-upload:before {
+  content: "\e9c3";
+}
+
+.icon-cloud-check:before {
+  content: "\e9c4";
+}
+
+.icon-download2:before {
+  content: "\e9c5";
+}
+
+.icon-upload2:before {
+  content: "\e9c6";
+}
+
+.icon-download3:before {
+  content: "\e9c7";
+}
+
+.icon-upload3:before {
+  content: "\e9c8";
+}
+
+.icon-sphere:before {
+  content: "\e9c9";
+}
+
+.icon-earth:before {
+  content: "\e9ca";
+}
+
+.icon-link:before {
+  content: "\e9cb";
+}
+
+.icon-flag:before {
+  content: "\e9cc";
+}
+
+.icon-attachment:before {
+  content: "\e9cd";
+}
+
+.icon-bookmark:before {
+  content: "\e9d2";
+}
+
+.icon-bookmarks:before {
+  content: "\e9d3";
+}
+
+.icon-notification:before {
+  content: "\ea08";
+}
+
+.icon-question:before {
+  content: "\ea09";
+}
+
+.icon-plus:before {
+  content: "\ea0a";
+}
+
+.icon-minus:before {
+  content: "\ea0b";
+}
+
+.icon-info:before {
+  content: "\ea0c";
+}
+
+.icon-cancel-circle:before {
+  content: "\ea0d";
+}
+
+.icon-blocked:before {
+  content: "\ea0e";
+}
+
+.icon-cross:before {
+  content: "\ea0f";
+}
+
+.icon-checkmark:before {
+  content: "\ea10";
+}
+
+.icon-checkmark2:before {
+  content: "\ea11";
+}
+
+.icon-exit:before {
+  content: "\ea14";
+}
+
+.icon-clipboard2:before {
+  content: "\e9b9";
+}
+
+.icon-list:before {
+  content: "\e9ba";
+}
+
+.icon-list2:before {
+  content: "\e9bb";
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+.icon-menu2:before {
+  content: "\e9be";
+}
+
+.icon-menu3:before {
+  content: "\e9bf";
+}
+
+.icon-menu4:before {
+  content: "\e9c0";
+}
+
+.icon-menu5:before {
+  content: "\e5d2";
+}
+
+.icon-more_horiz:before {
+  content: "\e5d3";
+}
+
+.icon-more_vert:before {
+  content: "\e5d4";
+}
+
+/*--------------------------------
+***  
+**   HEADER
+*/
+/*========================================================================================
+*********   DEFAULT HEADER HOME PAGE
+*******      
+*****       
+***         
+*/
+	/*--------------------------------
+	***   
+	**	 VARIABLE USE IN THIS FILE
+    */
+    /*--------------------------------
+	***   
+	**	 DEFAULT STYLE HEADER
+	*/
+header {
+  padding: 0em 2em;
+  background: white;
+  box-shadow: 0 -5px 11px #4d4d4d;
+  /*--------------------------------
+  *** NAVIGATION
+  **	 
+  */
+}
+header.sticky {
+  position: fixed;
+  right: 0;
+  left: 0;
+  height: 4.34em;
+}
+header.sticky.top {
+  top: 0;
+}
+header.sticky.top + main::before {
+  content: "";
+  display: block;
+  height: 4.34em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+header.sticky.bottom {
+  content: "";
+  display: block;
+  height: 4.34em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+header.bottom {
+  bottom: 0;
+}
+header.fullWidth {
+  width: 100vw;
+}
+@media screen and (min-width: 160em) {
+  header.fullWidth {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYjNiM2ZmIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(100%, rgba(179, 179, 255, 0.25)), color-stop(100%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 100%, rgba(0, 0, 0, 0) 100%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+    background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 100%, rgba(0, 0, 0, 0) 100%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 100%, rgba(0, 0, 0, 0) 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 8.33333%, 100% 24px;
+    background-origin: content-box, border-box;
+    background-clip: content-box, border-box;
+    background-position: left top;
+  }
+  header.fullWidth:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+header nav {
+  float: left;
+  /*--------------------------------
+  *** RESPOSIVE SECTION
+  **	TABLET & MOBILE
+  */
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+}
+header nav li {
+  display: inline-block;
+}
+header nav a {
+  display: block;
+  line-height: 1.7;
+  padding: 1.25em 1em;
+}
+@media screen and (max-width: 62em) {
+  header nav {
+    float: none;
+    position: fixed;
+    left: -120%;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background: white;
+    transition: all 0.7s ease-in-out;
+  }
+  header nav li {
+    display: block;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  header nav a {
+    padding: 1em 2em;
+  }
+  header nav .hideNav {
+    padding: 1em 2em;
+    display: block;
+    background: #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  header nav.showNavigation {
+    left: 0;
+  }
+}
+@media screen and (max-width: 40em) {
+  header nav {
+    width: 80%;
+  }
+}
+header .showNav.displayOnSmallDevice {
+  cursor: pointer;
+  position: absolute;
+  left: 2em;
+  top: 0.75em;
+  font-size: 1.75em;
+  /*--------------------------------
+  *** RESPOSIVE SECTION
+  **  MOBILE
+  */
+}
+@media screen and (max-width: 40em) {
+  header .showNav.displayOnSmallDevice {
+    left: 1em;
+  }
+}
+header .logo {
+  float: right;
+  /*--------------------------------
+  *** RESPOSIVE SECTION
+  **  MOBILE
+  */
+}
+header .logo a:hover {
+  background: none;
+}
+header .logo img {
+  padding: 0.75em;
+  height: 4em;
+  width: auto;
+}
+@media screen and (max-width: 40em) {
+  header .logo img {
+    padding: 1em 0;
+  }
+}
+
+/*--------------------------------
+***  
+**   MODULES
+*/
+/*========================================================================================
+*********   
+*******     DEFAULT HOME PAGE STYLE
+*****       
+***         
+*/
 main {
-  max-width: 1200px;
+  max-width: 85%;
   margin-left: auto;
   margin-right: auto;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNiM2IzZmYiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjZmZiIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYjNiM2ZmIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(80%, rgba(179, 179, 255, 0.25)), color-stop(80%, rgba(0, 0, 0, 0)));
-  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
-  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, rgba(0, 0, 0, 0) 80%);
-  background-size: 8.47458%;
-  background-origin: content-box;
-  background-clip: content-box;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(102, 102, 255, 0.25)), color-stop(100%, rgba(179, 179, 255, 0.25)), color-stop(100%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -moz-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 100%, rgba(0, 0, 0, 0) 100%), -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 100%, rgba(0, 0, 0, 0) 100%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 100%, rgba(0, 0, 0, 0) 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+  background-size: 8.33333%, 100% 24px;
+  background-origin: content-box, border-box;
+  background-clip: content-box, border-box;
   background-position: left top;
-  background-color: #FFFFFF;
 }
 main:after {
   content: " ";
@@ -256,27 +901,10 @@ main:after {
   clear: both;
 }
 
-header, article, aside {
-  margin-bottom: 1.69492%;
-}
-
-article {
-  width: 66.10169%;
-  float: left;
-  margin-right: 1.69492%;
-  padding: 2em;
-  background-color: #ff007f;
-}
-
-aside {
-  width: 32.20339%;
-  float: right;
-  margin-right: 0;
-  padding: 2em;
-  background-color: #CC0066;
-}
-
-/**********   FOOTER   **********/
+/*--------------------------------
+***  
+**   FOOTER
+*/
 /***
 *
 * DEFAULT FOOTER HOME PAGE
@@ -284,8 +912,9 @@ aside {
 ***/
 footer {
   clear: both;
-  padding: 2em;
-  background-color: #7F2653;
 }
 
-/**********   WIDGET   **********/
+/*--------------------------------
+***  
+**   WIDGET
+*/

@@ -1,28 +1,12 @@
-/***
-*
-* DEFAULT HOME PAGE STYLE
-*
-***/
+/*========================================================================================
+*********   
+*******     DEFAULT HOME PAGE STYLE
+*****       
+***         
+*/
 
-main {
-    @include container;
-    background-color: $color1;
-}
-
-header, article, aside {
-  margin-bottom: gutter();
-}
-
-article {
-    @include span(8);
-    padding: 2em;
-    background-color: $color3;
-}
-
-aside {
-    @include span(4 last);
-    padding: 2em;
-    background-color: $color5;
-}
+    main {
+        @include container;
+    }
 
 

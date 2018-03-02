@@ -1,8 +1,18 @@
-# READY TO DESIGN 
+# FRONT-END SECTION 
 
-Create project with css preprocessor and javascript task runners.
+    create project modular and flexible.
 
-# STRUCTURE PROJET
+    logo from freepick : https://www.freepik.com/free-vector/technical-logo-design_1187935.htm
+
+# STRUCTURE FRONT-END SECTION FILES
+
+    COMPONENTS :
+        |
+        |-- BOOTSTRAP
+        |
+        |-- icomoon  : font icon from icomoon.io
+        |
+        |-- ...
 
     CSS :
         |
@@ -12,7 +22,11 @@ Create project with css preprocessor and javascript task runners.
         |
         |-- ICONS :
         |       |
-        |       |-- ... file font icons here :)
+        |       |-- icomoon.eot
+        |       |-- icomoon.svg
+        |       |-- icomoon.ttf
+        |       |-- icomoon.woff
+        |
         |
         |--- file fonts here :)
 
@@ -22,13 +36,20 @@ Create project with css preprocessor and javascript task runners.
     
     JS :
         |
-        |-- javascript files here
+        |-- jquery.min.js (3.3.1)
+        |
+        |-- main.js
     
     SASS :
         |
         |-- FOOTER :
         |       |
         |       |-- _default.scss
+        |
+        |-- FUNCTIONS :
+        |       |
+        |       |-- _direction.scss
+        |
         |
         |-- HEADER :
         |       |
@@ -44,6 +65,13 @@ Create project with css preprocessor and javascript task runners.
         |-- TYPOGRAPHY :
         |       |
         |       |-- _default.scss
+        |       |
+        |       |-- _icomoon.scss
+        |       |
+        |       |-- _muliFont.scss
+        |       |
+        |       |-- _openSansFont.scss
+        |
         |
         |-- WIDGET :
         |       |
@@ -53,14 +81,18 @@ Create project with css preprocessor and javascript task runners.
         |
         |-- _grids.scss
         |
+        |-- _placeholder.scss
+        |
         |-- _variables.scss
         |
         |--style.scss ( ALL OF THE SASS FILES IMPORT IN THIS FILE )
 
     config.rb
-    index.html
-    
+    index.html                      // default index
 
-        
+# HOW MUCH WORK HAS BEEN DONE
 
+    First Step : we cretaed the nice and net structure and we try to improve clean and cleaner  :)
+
+    and until now we have the simple responsive navigation.
     
