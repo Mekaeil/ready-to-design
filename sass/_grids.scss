@@ -29,7 +29,7 @@
 		// column-width        : false,
 		// last-flow           : to,			
 		debug: (
-	    	image     : show,
+	    	image     : hide,
 	    	color     : rgba(#66f, .25),
 	    	output    : background,
 	    	toggle    : top right,
@@ -166,3 +166,15 @@
 			@content;
 		}
 	}
+
+
+	@for $i from 1 through $column {
+		
+		.#{$col_name}-#{$i}{
+
+			@include span($i);
+
+		}
+
+	}
+	

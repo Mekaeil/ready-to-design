@@ -12,6 +12,8 @@
         |
         |-- icomoon  : font icon from icomoon.io
         |
+        |-- map-box : for using google map and map API
+        |
         |-- ...
 
     CSS :
@@ -58,9 +60,14 @@
         |-- MODULES :
         |       |
         |       |-- HOME :
-        |               |
-        |               |-- _default.scss
-        |       
+        |       |       |
+        |       |       |-- _default.scss
+        |       |
+        |       |-- map-box :
+        |                   |
+        |                   |-- _mapbox.scss
+        |
+        |
         |
         |-- TYPOGRAPHY :
         |       |
@@ -89,10 +96,15 @@
 
     config.rb
     index.html                      // default index
+    mapbox.html
 
 # HOW MUCH WORK HAS BEEN DONE
 
     First Step : we cretaed the nice and net structure and we try to improve clean and cleaner  :)
 
     and until now we have the simple responsive navigation.
+
+# UPDATES :
+    
+    # 1 - Add Mapbox - add list of location list on map and display details. ( get data with JSON )
     
