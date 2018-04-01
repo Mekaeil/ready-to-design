@@ -277,7 +277,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 ***     
 **	 WRAPPER CLEARFIX
 */
-.wrapper-flex {
+.wrapper-flex, .threeColumn {
   display: flex;
   justify-content: space-between;
 }
@@ -1001,17 +1001,6 @@ header .logo img {
 *****       
 ***         
 */
-main {
-  max-width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-}
-main:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
 /*========================================================================================
 *********    
 *******      STYLE FOR MAPBOX
@@ -1236,6 +1225,149 @@ main:after {
   padding-bottom: 50px;
 }
 
+/*========================================================================================
+*********    
+*******      
+*****       SLIDER THIRD ROW AND ACTION TWO ROW
+***         
+*/
+#carouselSlide3Col {
+  margin: 1em auto;
+  width: 100vw;
+  /*--------------------------------
+  ***   
+  **	 GALLERIES SECTION
+  */
+  /*--------------------------------
+  ***   
+  **	 ICONS LINK SECTION
+  */
+  /*--------------------------------
+  ***   
+  **	 SENTENSES SECTION
+  */
+}
+#carouselSlide3Col .galleries {
+  width: 300%;
+  transition: all 1s;
+  /*--------------------------------
+  ***  WHEN WE WANT FIXED IMAGE ATTACHMENT 
+  **	 SECTION ADD THIS CLASS
+  */
+  /*--------------------------------
+  ***   
+  **	 RESPONSIVE SECTION
+  */
+}
+#carouselSlide3Col .galleries .img {
+  width: 100vw;
+  height: 25em;
+  background-size: 100% !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+}
+#carouselSlide3Col .galleries.fixed .img {
+  width: 100vw;
+  height: 25em;
+  background-attachment: fixed;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 87.5em) {
+  #carouselSlide3Col .galleries {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  #carouselSlide3Col .galleries:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+#carouselSlide3Col .txt2colWithIcon {
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+#carouselSlide3Col .txt2colWithIcon:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+#carouselSlide3Col .txt2colWithIcon .containArticles {
+  width: 300%;
+  transition: all 0.8s;
+}
+#carouselSlide3Col .txt2colWithIcon article {
+  width: 33.33333%;
+  float: left;
+  /*--------------------------------
+  ***   
+  **   RESPONSIVE SECTION
+  */
+}
+#carouselSlide3Col .txt2colWithIcon article img {
+  width: 100%;
+  height: auto;
+  padding: 1em;
+  border-radius: 100%;
+}
+#carouselSlide3Col .txt2colWithIcon article .displayIcon {
+  text-align: center;
+}
+#carouselSlide3Col .txt2colWithIcon article .displayIcon svg {
+  background: transparent;
+  width: 80%;
+  height: auto;
+  padding: 2em 4em;
+}
+#carouselSlide3Col .txt2colWithIcon article .displayIcon svg path {
+  fill: #3498db;
+}
+#carouselSlide3Col .txt2colWithIcon article p {
+  display: block;
+  margin-bottom: 1em;
+}
+#carouselSlide3Col .txt2colWithIcon article .findMore {
+  font-size: 1.7rem;
+  color: #3498db;
+}
+#carouselSlide3Col .txt2colWithIcon article .findMore span {
+  display: inline-block;
+  vertical-align: middle;
+}
+#carouselSlide3Col .txt2colWithIcon article .findMore span[class^="icon"] {
+  font-size: 2.3rem;
+}
+@media screen and (min-width: 160em) {
+  #carouselSlide3Col .txt2colWithIcon article p {
+    font-size: 2rem;
+  }
+  #carouselSlide3Col .txt2colWithIcon article .findMore {
+    font-size: 2.7rem;
+  }
+}
+@media screen and (max-width: 62em) {
+  #carouselSlide3Col .txt2colWithIcon article .displayIcon svg {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 40em) {
+  #carouselSlide3Col .txt2colWithIcon article .displayIcon {
+    display: none;
+  }
+  #carouselSlide3Col .txt2colWithIcon article .span-8 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 /*--------------------------------
 ***  
 **   FOOTER
@@ -1253,3 +1385,194 @@ footer {
 ***  
 **   WIDGET
 */
+/*========================================================================================
+*********   
+*******     THREE COLUMN BOX 
+*****       
+***         
+*/
+.threeColumn {
+  padding: 2em 2em;
+  overflow: hidden;
+  /*--------------------------------
+  ***   
+  **	 RESPONSIVE SECTION
+  */
+  /*--------------------------------
+  *** 
+  **  RESPONSIVE SECTION threeColumn
+  */
+}
+@media screen and (min-width: 87.5em) {
+  .threeColumn {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .threeColumn:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+.threeColumn article {
+  width: 33.33333%;
+  /*--------------------------------
+  *** 
+  **  ICONS HAS BACKGROUND
+  */
+  /*--------------------------------
+  *** 
+  **  RESPONSIVE SECTION ARTICLE
+  */
+}
+.threeColumn article h2 {
+  text-align: center;
+  line-height: 2;
+  font-size: 1.7em;
+  margin: 0.5em auto 1em;
+  color: #3498db;
+}
+.threeColumn article figure {
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+}
+.threeColumn article figure svg {
+  width: 40%;
+  height: auto;
+}
+.threeColumn article figure figcaption {
+  display: block;
+  padding: 2em 1em;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.threeColumn article .hasValue {
+  text-align: center;
+}
+.threeColumn article .hasValue .number {
+  display: block;
+  font-size: 3em;
+  color: #3498db;
+}
+.threeColumn article .hasValue .txt {
+  display: block;
+  padding: 0.2em 0em;
+  text-align: right;
+  font-size: 1.5em;
+  margin-right: 10%;
+  color: #3498db;
+}
+.threeColumn article.hasBgIcon {
+  /*--------------------------------
+  *** 
+  **  WHEN CLICK ON ICON AND ADD CLASS ACTIVE
+  */
+}
+.threeColumn article.hasBgIcon h2 {
+  width: 50%;
+  line-height: 1.7;
+  font-size: 1.3em;
+  color: #7f8c8d;
+}
+.threeColumn article.hasBgIcon figure {
+  overflow: hidden;
+  text-align: center;
+  height: 8em;
+  width: 8em;
+  border: 1px solid transparent;
+  border-radius: 100%;
+  margin: 1em auto;
+  padding: 0;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  /*--------------------------------
+  *** 
+  **  RESPONSIVE SECTION ARTICLE
+  */
+}
+@media screen and (min-width: 160em) {
+  .threeColumn article.hasBgIcon figure {
+    height: 12rem;
+    width: 12rem;
+  }
+}
+.threeColumn article.hasBgIcon figure svg {
+  background: #3498db;
+  width: auto;
+  height: 100%;
+  padding: 2em;
+}
+.threeColumn article.hasBgIcon figure svg path {
+  fill: white;
+}
+.threeColumn article.hasBgIcon.onlyStrock figure {
+  border: 1px solid #3498db;
+}
+.threeColumn article.hasBgIcon.onlyStrock figure svg {
+  background: transparent;
+  width: auto;
+  height: 100%;
+  padding: 2em;
+}
+.threeColumn article.hasBgIcon.onlyStrock figure svg path {
+  fill: #3498db;
+}
+.threeColumn article.hasBgIcon::after {
+  content: "";
+  width: 65%;
+  height: 5px;
+  display: block;
+  margin: 2em auto 1em;
+  background: #7f8c8d;
+}
+.threeColumn article.hasBgIcon.active h2 {
+  color: #3498db;
+  font-weight: bold;
+}
+.threeColumn article.hasBgIcon.active::after {
+  background: #3498db;
+}
+@media screen and (max-width: 62em) {
+  .threeColumn article {
+    font-size: 0.65em;
+  }
+}
+@media screen and (max-width: 40em) {
+  .threeColumn article {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .threeColumn article figure figcaption {
+    padding: 1em;
+    font-size: 1.75em;
+    line-height: 1.7;
+  }
+  .threeColumn article .hasValue .number {
+    display: inline-block;
+    font-size: 2.2em;
+  }
+  .threeColumn article .hasValue .txt {
+    display: inline-block;
+    padding: 0.2em 0em;
+    text-align: right;
+    font-size: 1.5em;
+    margin-left: 1%;
+  }
+  .threeColumn article:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 70%;
+    height: 1px;
+    background: #bedcf0;
+    margin: 3em auto 0;
+  }
+}
+@media screen and (max-width: 40em) {
+  .threeColumn {
+    flex-flow: column;
+  }
+}

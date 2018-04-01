@@ -64,9 +64,12 @@
         |       |       |-- _default.scss
         |       |
         |       |-- map-box :
-        |                   |
-        |                   |-- _mapbox.scss
-        |
+        |       |           |
+        |       |           |-- _mapbox.scss
+        |       |
+        |       |-- slider-third-row :
+        |       |                   |
+        |       |                   |-- _sliderThirdRow
         |
         |
         |-- TYPOGRAPHY :
@@ -81,6 +84,8 @@
         |
         |
         |-- WIDGET :
+        |       |
+        |       |-- _three_column_icon 
         |       |
         |       |--  ...
         |
@@ -97,6 +102,7 @@
     config.rb
     index.html                      // default index
     mapbox.html
+    slider.html
 
 # HOW MUCH WORK HAS BEEN DONE
 
@@ -106,5 +112,7 @@
 
 # UPDATES :
     
-    # 1 - Add Mapbox - add list of location list on map and display details. ( get data with JSON )
+    #1 - Add Mapbox - add list of location list on map and display details. ( get data with JSON )
+
+    #2 - Add CustomSlider - This slider has three row and we click on icon and move first and third section.
     
